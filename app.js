@@ -10,7 +10,7 @@ app.use(cors());
 const dataRoute = require("./routes/data")
 
 if(process.env.NODE_ENV == "production"){
-  app.use(express.static("my-app/build"))
+  app.use(express.static("client/build"))
 }
 
 const connection = mongoose.connect(
